@@ -14,8 +14,8 @@ console.log("=============================================");
     Age : ${age}
     District : ${district}
     `);
-  console.log("=============================================");
 }
+console.log("=============================================");
 {
   /**
    * Task 2 | Basic Calculator
@@ -37,8 +37,8 @@ console.log("=============================================");
     Division = ${division}
     Remainder = ${remainder}    
     `);
-  console.log("=============================================");
 }
+console.log("=============================================");
 {
   /**
    * Task 3 | Even Or Odd Checker
@@ -50,8 +50,8 @@ console.log("=============================================");
   } else {
     console.log(`${number} = Odd Number !`);
   }
-  console.log("=============================================");
 }
+console.log("=============================================");
 {
   /**
    * Task 4 | Positiv,Negarive of Zero
@@ -65,9 +65,8 @@ console.log("=============================================");
   } else {
     console.log(`${num} = Zero`);
   }
-
-  console.log("=============================================");
 }
+console.log("=============================================");
 {
   /**
    * Task 5 | Grade Calculator
@@ -93,8 +92,8 @@ console.log("=============================================");
   }
 
   console.log(`${mark} : ${grade} ;`);
-  console.log("=============================================");
 }
+console.log("=============================================");
 {
   /**
    * Task 6 | Largest Number
@@ -113,9 +112,8 @@ console.log("=============================================");
     largestNumber = number3;
   }
   console.log(largestNumber, "Largest Number");
-
-  console.log("=============================================");
 }
+console.log("=============================================");
 {
   /**
    * Task 7 | Smallest Number
@@ -133,8 +131,8 @@ console.log("=============================================");
     smallestNumber = number3;
   }
   console.log(smallestNumber, "Smallest Number");
-  console.log("=============================================");
 }
+console.log("=============================================");
 {
   /**
    * Task 8 | Create a Fruit Array
@@ -228,9 +226,8 @@ console.log("=============================================");
   const replaceItem = fruits.splice(3, 1, "Pineapple");
   console.log(fruits);
   console.log("Replace Item :", replaceItem);
-
-  console.log("=============================================");
 }
+console.log("=============================================");
 
 {
   /**
@@ -243,9 +240,8 @@ console.log("=============================================");
   const fourthColor = color[3];
   console.log("Secound Color :", secondColor);
   console.log("Fourth Color : ", fourthColor);
-
-  console.log("=============================================");
 }
+console.log("=============================================");
 {
   /**
    * Task 19 | Shopping Cart
@@ -257,9 +253,8 @@ console.log("=============================================");
   console.log(shoppingCart);
   shoppingCart.splice(1, 1, "Smart Watch");
   console.log(shoppingCart);
-
-  console.log("=============================================");
 }
+console.log("=============================================");
 
 {
   /**
@@ -297,9 +292,8 @@ console.log("=============================================");
     Favorit Subject : ${favoriteSubject}
     Grade        :${grad}
     `);
-
-  console.log("=============================================");
 }
+console.log("=============================================");
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////Java Script Practice Set - 2////////////////
 {
@@ -315,9 +309,8 @@ console.log("=============================================");
     }
   }
   console.log("Total Even Number :", evenNumberCount);
-
-  console.log("=============================================");
 }
+console.log("=============================================");
 {
   /**
    * Task 2.2 | Count Odd Numbers
@@ -331,6 +324,49 @@ console.log("=============================================");
     }
   }
   console.log("Total Odd Number :", oddNumberCount);
+}
+console.log("=============================================");
+{
+  /**
+   * Task 2.3 | Sum of All Numbers
+   * Create an array of numbers. Find and print the sum of all elements.
+   */
 
-  console.log("=============================================");
+  const numbers = [23, 34, 45, 56, 67, 78, 89, 90, 98, 76, 65, 43, 32, 21, 23];
+  let sum = 0;
+
+  for (let x of numbers) {
+    sum = sum + x;
+  }
+  console.log("Total Sum = ", sum);
+}
+console.log("=============================================");
+{
+  /**
+   * Task 2.4 | Find The Largest Number
+   * Create an array of numbers. Find and print the largest number without using Math.max().
+   */
+  const numbers = [230, 34, 45, 56, 67, 78, 89, 90, 98, 76, 65, 43, 32, 21, 10];
+  let largestNumber = numbers[0];
+  for (let x of numbers) {
+    if (largestNumber < x) {
+      largestNumber = x;
+    }
+  }
+  console.log("Largest Number = ", largestNumber);
+}
+console.log("=============================================");
+{
+  /**
+   *  Task 2.5 | Find the Smallest Number
+   * Create an array of numbers. Find and print the smallest number without using Math.min().
+   */
+  const numbers = [230, 34, 45, 56, 67, 78, 89, 90, 98, 76, 65, 43, 32, 21, 10];
+  let smallestNumber = numbers[0];
+  for (let x of numbers) {
+    if (x < smallestNumber) {
+      smallestNumber = x;
+    }
+  }
+  console.log("Smallest Number : ", smallestNumber);
 }
