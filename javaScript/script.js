@@ -377,6 +377,11 @@ console.log("=============================================");
    * Create an array containing positive and negative numbers. Count how many positive numbers are in the array.
    */
 
+  /**
+   *  Task 2.7 | Negative Numbers
+   * Create an array containing positive and negative numbers. Count how many negarive numbers are in the array.
+   */
+
   const numbers = [-12, -23, -13, -32, 56, 32, 76, 14, -76, -54, -3, -23];
   let positiveNumberCount = 0;
   let negativeNumberCount = 0;
@@ -390,4 +395,39 @@ console.log("=============================================");
   }
   console.log("Positive Number = ", positiveNumberCount);
   console.log("Negative Number = ", negativeNumberCount);
+}
+console.log("=============================================");
+
+{
+  /**
+   * Task 2.8 | Reverse an Array
+   * Create an array and print its clements in reverse order using a loop.
+   */
+  const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+}
+console.log("=============================================");
+
+{
+  /**
+   * Task 2.9 | Print Only Even Number
+   * Create an array of numbers. Print only the even numbers.
+   */
+  let numbers = [34, 45, 56, 67, 78, 89, 90, 87, 76, 65, 54, 43, 32, 21, 1];
+  let evenNumber = [];
+  for (let x of numbers) {
+    if (x % 2 == 0) {
+      evenNumber.push(x);
+    }
+  }
+  console.log("main Array :", numbers);
+  console.log("Even Number : ", evenNumber);
+}
+
+console.log("=============================================");
+
+{
+  /**
+   * Task 2.10 | Print Only Odd Numbers
+   * Create an array of numbers. Print only the odd numbers
+   */
 }
