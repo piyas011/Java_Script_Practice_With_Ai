@@ -220,4 +220,29 @@ console.log("=============================================");
   console.log(index);
 
   console.log("=============================================");
+
+  /**
+   * Task 17 | Update an Aarray Element
+   * Replace an existing item in an array with a new valu. Print the update array.
+   */
+  const replaceItem = fruits.splice(3, 1, "Pineapple");
+  console.log(fruits);
+  console.log("Replace Item :", replaceItem);
+
+  console.log("=============================================");
+}
+
+{
+  /**
+   * Task 18 | Favorite Colors
+   * Create an array your five favorite colors. Print the second and fourth colors.
+   */
+  const color = ["blue", "greem", "orange", "purple", "charcoal"];
+
+  const secondColor = color[1];
+  const fourthColor = color[3];
+  console.log("Secound Color :", secondColor);
+  console.log("Fourth Color : ", fourthColor);
+
+  console.log("=============================================");
 }
