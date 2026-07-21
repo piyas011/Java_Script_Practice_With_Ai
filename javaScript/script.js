@@ -260,3 +260,41 @@ console.log("=============================================");
 
   console.log("=============================================");
 }
+
+{
+  /**
+   * Task 20 | Student Data
+   * Create variables to store a student's name,age,marks, and favorite subject . Print all the information. Then check the student's grade based on the marks.
+   */
+
+  const studentName = "Piyas Ahmed";
+  let age = 21;
+  const mark = 60;
+  const favoriteSubject = "ICT";
+  let grad;
+
+  if (mark < 0 || mark > 100) {
+    grad = "Invaled Number";
+  } else if (mark >= 80) {
+    grad = "A+";
+  } else if (mark >= 70) {
+    grad = "A";
+  } else if (mark >= 60) {
+    grad = "A-";
+  } else if (mark >= 50) {
+    grad = "B";
+  } else if (mark >= 40) {
+    grad = "C";
+  } else if (mark >= 33) {
+    grad = "D";
+  } else {
+    grad = "Faaaaaaaaaaaaaaaaaaaaaaah";
+  }
+  console.log(`
+    Student Name : ${studentName}
+    Student Age  : ${age}
+    Student Mark : ${mark}
+    Favorit Subject : ${favoriteSubject}
+    Grade        :${grad}
+    `);
+}
