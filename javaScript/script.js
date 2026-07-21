@@ -370,3 +370,24 @@ console.log("=============================================");
   }
   console.log("Smallest Number : ", smallestNumber);
 }
+console.log("=============================================");
+{
+  /**
+   *  Task 2.6 | Count Positive Number
+   * Create an array containing positive and negative numbers. Count how many positive numbers are in the array.
+   */
+
+  const numbers = [-12, -23, -13, -32, 56, 32, 76, 14, -76, -54, -3, -23];
+  let positiveNumberCount = 0;
+  let negativeNumberCount = 0;
+
+  for (let x of numbers) {
+    if (x > 0) {
+      positiveNumberCount++;
+    } else {
+      negativeNumberCount++;
+    }
+  }
+  console.log("Positive Number = ", positiveNumberCount);
+  console.log("Negative Number = ", negativeNumberCount);
+}
