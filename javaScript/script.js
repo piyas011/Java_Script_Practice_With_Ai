@@ -164,4 +164,60 @@ console.log("=============================================");
   console.log(`Tatal Element : ${arrayLength}`);
 
   console.log("=============================================");
+
+  /**
+   *Task 11 | Add an Item
+   * Create an array and print the total number of elements in the array.
+   */
+  fruits.push("wetermelon");
+  console.log("New Array : ", fruits);
+
+  console.log("=============================================");
+
+  /**
+   * Task 12 | Remove the Last Item
+   * Remove the last item from an array. Print the updated array.
+   */
+  fruits.pop();
+  console.log("After Remove Array ", fruits);
+  console.log("=============================================");
+
+  /**
+   * Task 13 | Add an Item at the Beginning
+   * Add a niw item to the beginning of an array.Print the updated array.
+   */
+
+  fruits.unshift("grapes");
+  console.log("Add New Item to The Beginning ", fruits);
+
+  console.log("=============================================");
+
+  /**
+   * Task 14 | Remove the First Item
+   * Remove the first item from an array. Print the update array.
+   */
+  fruits.shift();
+  console.log("Remove The first Item an array : ", fruits);
+
+  console.log("=============================================");
+
+  /**
+   * Task 15 | Search an Item
+   * Check whether a specific item exists in an array. Print the result.
+   */
+  const searchItrm = "mango";
+  const exists = fruits.includes(searchItrm);
+  console.log(exists);
+
+  console.log("=============================================");
+
+  /**
+   * Task 16 | Find Item index
+   * Find the index of a specific item in an array and print the index.
+   */
+  const searchItem = "mango";
+  const index = fruits.indexOf(searchItem);
+  console.log(index);
+
+  console.log("=============================================");
 }
