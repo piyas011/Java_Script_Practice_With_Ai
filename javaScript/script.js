@@ -135,3 +135,33 @@ console.log("=============================================");
   console.log(smallestNumber, "Smallest Number");
   console.log("=============================================");
 }
+{
+  /**
+   * Task 8 | Create a Fruit Array
+   * Create an array at least five fruit names. Print the entire array.
+   */
+  const fruits = ["apple", "banana", "orange", "Stawberry", "mango"];
+
+  console.log(fruits);
+  console.log("=============================================");
+
+  /**
+   * Task 9 | Frirst and Last Element
+   * Print the first and the last element of a fruit arry.
+   */
+  const firstElement = fruits[0];
+  const lastElement = fruits[fruits.length - 1];
+  console.log(`First Element : ${firstElement}`);
+  console.log(`Last Element : ${lastElement}`);
+
+  console.log("=============================================");
+
+  /**
+   * Task 10 | Array Length
+   * Create an array and print the total nuber of elements in the array.
+   */
+  const arrayLength = fruits.length;
+  console.log(`Tatal Element : ${arrayLength}`);
+
+  console.log("=============================================");
+}
