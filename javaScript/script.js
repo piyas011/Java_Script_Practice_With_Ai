@@ -297,4 +297,40 @@ console.log("=============================================");
     Favorit Subject : ${favoriteSubject}
     Grade        :${grad}
     `);
+
+  console.log("=============================================");
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////Java Script Practice Set - 2////////////////
+{
+  /**
+   * Task 2.1 Count Even Numbers
+   * Create an array of numbers.Count how many even numbers are in the array and print the result
+   */
+  const numbers = [23, 34, 45, 56, 67, 78, 89, 90, 98, 76, 65, 43, 32, 21, 23];
+  let evenNumberCount = 0;
+  for (let number of numbers) {
+    if (number % 2 === 0) {
+      evenNumberCount++;
+    }
+  }
+  console.log("Total Even Number :", evenNumberCount);
+
+  console.log("=============================================");
+}
+{
+  /**
+   * Task 2.2 | Count Odd Numbers
+   * create an array of numbers. Count how many odd numbers are in the array and print the result.
+   */
+  const numbers = [23, 34, 45, 56, 67, 78, 89, 90, 98, 76, 65, 43, 32, 21, 23];
+  let oddNumberCount = 0;
+  for (let number of numbers) {
+    if (number % 2 !== 0) {
+      oddNumberCount++;
+    }
+  }
+  console.log("Total Odd Number :", oddNumberCount);
+
+  console.log("=============================================");
 }
