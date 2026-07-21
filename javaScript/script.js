@@ -246,3 +246,17 @@ console.log("=============================================");
 
   console.log("=============================================");
 }
+{
+  /**
+   * Task 19 | Shopping Cart
+   * Create a shopping cart array aith at least three products. Add one product, remove one product, and print the final array.
+   */
+
+  const shoppingCart = ["Headphones", "Watch", "keyboard", "Power Bank"];
+
+  console.log(shoppingCart);
+  shoppingCart.splice(1, 1, "Smart Watch");
+  console.log(shoppingCart);
+
+  console.log("=============================================");
+}
