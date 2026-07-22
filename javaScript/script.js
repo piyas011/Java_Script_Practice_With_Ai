@@ -430,4 +430,14 @@ console.log("=============================================");
    * Task 2.10 | Print Only Odd Numbers
    * Create an array of numbers. Print only the odd numbers
    */
+  let numbers = [34, 45, 56, 67, 78, 89, 90, 87, 76, 65, 54, 43, 32, 21, 1];
+  let oddNumber = [];
+  for (let x of numbers) {
+    if (x % 2 !== 0) {
+      oddNumber.push(x);
+    }
+  }
+  console.log("Main Array :", numbers);
+  console.log("Odd Number : ", oddNumber);
+  j;
 }
