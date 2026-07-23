@@ -498,3 +498,21 @@ console.log("=============================================");
   }
   console.log(`Total Vowel = ${vowelsCount}`);
 }
+console.log("=============================================");
+{
+  /**
+   * Task 2.14 | Find the longest word
+   * create an array of words. Find and print the longest word.
+   */
+  let string = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident magnam beatae inventore corporis maxime aspernatur blanditiis totam adipisci cum error minus praesentium, perferendis harum quas eligendi temporibus sint aliquam quam?`;
+  string = string.split(" ");
+  let longestWord = string[0];
+  // console.log(longestWord);
+  // console.log(string);
+  for (let word of string) {
+    if (longestWord.length < word.length) {
+      longestWord = word;
+    }
+  }
+  console.log(`Longest Word : ${longestWord}`);
+}
