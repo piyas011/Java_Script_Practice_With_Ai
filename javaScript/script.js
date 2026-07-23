@@ -516,3 +516,14 @@ console.log("=============================================");
   }
   console.log(`Longest Word : ${longestWord}`);
 }
+console.log("=============================================");
+{
+  /**
+   * Task 2.15 | Multiplication Table
+   * Create a variable containing a number . Print its multiplication table from 1 to 10;
+   */
+  const number = 5;
+  for (let i = 1; i <= 10; i++) {
+    console.log(`${number} * ${i} = ${number * i} `);
+  }
+}
