@@ -527,3 +527,22 @@ console.log("=============================================");
     console.log(`${number} * ${i} = ${number * i} `);
   }
 }
+console.log("=============================================");
+{
+  /**
+   * Task 2.16 | Number Pattern
+   * Print the following pattern using nested loops:
+   * 1
+   * 12
+   * 123
+   * 1234
+   * 12345
+   */
+  for (let i = 1; i <= 5; i++) {
+    let pattern = "";
+    for (let x = 1; x <= i; x++) {
+      pattern += x;
+    }
+    console.log(pattern);
+  }
+}
