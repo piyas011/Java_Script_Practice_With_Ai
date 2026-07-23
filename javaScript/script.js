@@ -439,5 +439,62 @@ console.log("=============================================");
   }
   console.log("Main Array :", numbers);
   console.log("Odd Number : ", oddNumber);
-  j;
+}
+
+console.log("=============================================");
+{
+  /**
+   * Task 2.11 | Find a Specific Number
+   * Create an array of numbers .Search for a specific number.If found,Print its index; otherwise , print "not Found"
+   */
+  const numbers = [23, 34, 45, 56, 67, 78, 89, 87, 76];
+  const searchNumber = 23;
+
+  if (numbers.includes(searchNumber)) {
+    console.log(numbers.indexOf(searchNumber));
+  } else {
+    console.log("Not Found");
+  }
+}
+
+console.log("=============================================");
+{
+  /**
+   * Task 2.12 | Remove Duplicate Values
+   * Create an array with duplicate values. print a new array containing only unique values.
+   */
+  const array = [
+    12, 23, 23, 34, 43, 34, 34, 45, 45, 56, 56, 56, 67, 67, 65, 65, 55, 55, 55,
+    56, 54,
+  ];
+
+  let uniqueArray = [];
+  for (const num of array) {
+    if (!uniqueArray.includes(num)) {
+      uniqueArray.push(num);
+    }
+  }
+  console.log(array);
+  console.log(uniqueArray);
+  //I took hints from ai.
+}
+console.log("=============================================");
+{
+  /**
+   * Task 2.13 | Count Vowels
+   * Create a string. Count how many vowels (a,e,i,o,u) are in the string.
+   */
+  let string = ` quam`;
+  string = string.toLowerCase().trim();
+  // console.log(string);
+
+  let vowelsCount = 0;
+  let stringSplit = string.split("");
+
+  for (let x of stringSplit) {
+    if ("a" === x || "e" === x || "i" === x || "o" === x || "u" === x) {
+      vowelsCount++;
+    }
+  }
+  console.log(`Total Vowel = ${vowelsCount}`);
 }
