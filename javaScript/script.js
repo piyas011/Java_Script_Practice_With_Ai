@@ -583,3 +583,26 @@ console.log("=============================================");
   const averageOfNumber = totalSum / numberArray.length;
   console.log(` Average Number Of Array :`, averageOfNumber.toFixed(2));
 }
+console.log("=============================================");
+{
+  /**
+   * Task 2.19 | Student Result Analyzer
+   * Create an array of student marks. Count how many stucent passd (marks >= 40) and how many failed.
+   */
+  const studentMarks = [
+    56, 23, 45, 78, 54, 12, 31, 52, 16, 23, 65, 86, 36, 26, 26, 63, 46,
+  ];
+  let passStudents = 0;
+  let failedStudents = 0;
+  for (const mark of studentMarks) {
+    if (mark >= 40) {
+      passStudents++;
+    } else {
+      failedStudents++;
+    }
+  }
+  console.log(`Total Pass Student : ${passStudents}`);
+  console.log(`Total Failed Student : ${failedStudents}`);
+  console.log(`Total Students : ${studentMarks.length}`);
+}
+console.log("=============================================");
