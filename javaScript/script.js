@@ -566,3 +566,20 @@ console.log("=============================================");
     console.log(pattern);
   }
 }
+console.log("=============================================");
+
+{
+  /**
+   * Task 2.18 | Average of array
+   * Create an array of numbers. Find and print the average value of all elements.
+   */
+
+  const numberArray = [45, 56, 23, 43, 87, 56, 43, 23, 21, 34, 4, 5, 6, 4, 3];
+  let totalSum = 0;
+  for (const num of numberArray) {
+    totalSum += num;
+  }
+  // console.log(totalSum);
+  const averageOfNumber = totalSum / numberArray.length;
+  console.log(` Average Number Of Array :`, averageOfNumber.toFixed(2));
+}
