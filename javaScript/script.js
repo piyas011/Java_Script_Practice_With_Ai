@@ -606,3 +606,16 @@ console.log("=============================================");
   console.log(`Total Students : ${studentMarks.length}`);
 }
 console.log("=============================================");
+{
+  /**
+   * Task 2.20 | Shopping Cart Total
+   * Create an array of product prices. Calculate and print the totalcost of all products.
+   */
+  const productPriceArray = [566, 544, 800, 7190, 8770, 7100, 7600];
+  let totalCost = 0;
+  for (const price of productPriceArray) {
+    totalCost += price;
+  }
+  console.log(`Total Cost : ${totalCost}`);
+}
+console.log("=============================================");
