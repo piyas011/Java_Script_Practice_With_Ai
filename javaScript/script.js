@@ -619,3 +619,22 @@ console.log("=============================================");
   console.log(`Total Cost : ${totalCost}`);
 }
 console.log("=============================================");
+{
+  /**
+   * Challenge 1.1 Second Largest Number
+   * Find the second largest number in an array without sorting the array;
+   */
+  const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+  let firstLargestNumber = arr[0];
+  let secoundLargestNumber = arr[1];
+  for (const num of arr) {
+    if (num > firstLargestNumber) {
+      secoundLargestNumber = firstLargestNumber;
+      firstLargestNumber = num;
+    } else if (num > secoundLargestNumber && num !== firstLargestNumber) {
+      secoundLargestNumber = num;
+    }
+  }
+  console.log(`First Larg Number : ${firstLargestNumber}`);
+  console.log(`Secound Latg Number : ${secoundLargestNumber}`);
+}
