@@ -546,3 +546,23 @@ console.log("=============================================");
     console.log(pattern);
   }
 }
+console.log("=============================================");
+{
+  /**
+   * Task 2.17 | Star Pattern
+   * Print the following pattern using nested loops:
+   * *
+   * **
+   * ***
+   * ****
+   * *****
+   */
+
+  for (let i = 1; i <= 10; i++) {
+    let pattern = "*";
+    for (let x = 1; x < i; x++) {
+      pattern += "*";
+    }
+    console.log(pattern);
+  }
+}
