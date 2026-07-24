@@ -638,3 +638,21 @@ console.log("=============================================");
   console.log(`First Larg Number : ${firstLargestNumber}`);
   console.log(`Secound Latg Number : ${secoundLargestNumber}`);
 }
+console.log("=============================================");
+
+{
+  /**
+   * challeng 1.2 Palindrome Checker
+   * Create a string and check whether it is a palindrome,
+   */
+  let str = "madam";
+  let strReverse = str.split("");
+  strReverse = strReverse.reverse();
+  strReverse = strReverse.join("");
+  console.log(strReverse);
+  if (str === strReverse) {
+    console.log("Palindrome");
+  } else {
+    console.log("Not Palindtome");
+  }
+}
