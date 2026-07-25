@@ -678,3 +678,25 @@ console.log("=============================================");
   const result = sumOfArrayNumbers(numbers);
   console.log(`Total Sum Of Array : ${result}`);
 }
+console.log("=============================================");
+{
+  /**
+   * Task 4.2 | Find The Largest Number
+   * Create a finction that takes an array of numbers and returns the largest number.
+   */
+
+  const arr = [4, 6, 5, 7, 3, 13, 90, 96, 43];
+  function largestNumberFunction(array) {
+    let largNumber = array[0];
+    for (const number of array) {
+      if (largNumber < number) {
+        largNumber = number;
+      }
+    }
+    return largNumber;
+  }
+
+  const result = largestNumberFunction(arr);
+  console.log(`Largest Number = ${result}`);
+}
+console.log("=============================================");
