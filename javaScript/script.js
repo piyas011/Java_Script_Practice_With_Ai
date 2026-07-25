@@ -726,11 +726,13 @@ console.log("=============================================");
    * Create a function that counts how many even numbers are in an array.
    */
   const array = [4, 6, 5, 7, 3, 13, 90, 96, 43];
+  let evenNumberArray = 0;
   function countEvenNumber(arr) {
     let evenArray = [];
     for (const number of arr) {
       if (number % 2 === 0) {
         evenArray.push(number);
+        evenNumberArray++;
       }
     }
     return evenArray;
@@ -739,5 +741,28 @@ console.log("=============================================");
 
   console.log(`Main Array : ${array}`);
   console.log(`Even Number Array : ${evenArray}`);
+  console.log(`Even Number Count : ${evenNumberArray}`);
 }
 console.log("=============================================");
+{
+  /**
+   * Task 4.5 | Count Odd Number
+   * Create a function that counts how many odd numbers are in an array.
+   */
+  const array = [4, 6, 5, 7, 3, 13, 90, 96, 43];
+  let countOddArray = 0;
+  function countOddNumbers(arr) {
+    let oddArray = [];
+    for (const number of arr) {
+      if (number % 2 !== 0) {
+        oddArray.push(number);
+        countOddArray++;
+      }
+    }
+    return oddArray;
+  }
+  let result = countOddNumbers(array);
+  console.log(`Main Array :`, array);
+  console.log(`Odd Number Array :`, result);
+  console.log(`Total Odd Number :${countOddArray}`);
+}
