@@ -831,3 +831,19 @@ console.log("=============================================");
 
   positiveNegativeNumberCount(numbers);
 }
+console.log("=============================================");
+{
+  /**
+   * Task 4.9 | Average of Numbers
+   * Create a function that returns the average of all numbers in an array.
+   */
+  const number = [34, 5, 56, 67, 87, 56, 5, 4, 6, 67, 78, 89, 43];
+  function averageNumber(number) {
+    let totalNumber = 0;
+    for (const num of number) {
+      totalNumber += num;
+    }
+    return totalNumber / number.length;
+  }
+  console.log(averageNumber(number).toFixed(2));
+}
