@@ -806,3 +806,28 @@ console.log("=============================================");
 }
 
 console.log("=============================================");
+{
+  /**
+   * Task 4.8 | Cout Positive Numbers
+   * Create a function that counts how many positivei and negative numbers are in an array
+   */
+
+  const numbers = [34, -45, 34, 45, -34, -56, 90, 90, 56, 67, 87, 6565];
+  function positiveNegativeNumberCount(numbers) {
+    let positiveNumber = 0;
+    let negativeNumber = 0;
+
+    for (const num of numbers) {
+      if (num < 0) {
+        negativeNumber++;
+      } else if (num > 0) {
+        positiveNumber++;
+      }
+    }
+    console.log(`Total Number = ${numbers.length}`);
+    console.log(`Total Positive Number = ${positiveNumber}`);
+    console.log(`Total Negative Number = ${negativeNumber}`);
+  }
+
+  positiveNegativeNumberCount(numbers);
+}
