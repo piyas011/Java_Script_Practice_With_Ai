@@ -700,3 +700,23 @@ console.log("=============================================");
   console.log(`Largest Number = ${result}`);
 }
 console.log("=============================================");
+{
+  /**
+   * Task 4.3 | Find the Smallest Number
+   * create a function that takes an array of number and returns the smallest number.
+   */
+  const array = [4, 6, 5, 7, 3, 13, 90, 96, 43];
+
+  function smallestNumberFunction(arr) {
+    let smallNumber = arr[0];
+    for (const number of arr) {
+      if (smallNumber > number) {
+        smallNumber = number;
+      }
+    }
+    return smallNumber;
+  }
+  let result = smallestNumberFunction(array);
+  console.log(`Smallest Number : ${result}`);
+}
+console.log("=============================================");
