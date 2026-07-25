@@ -785,3 +785,24 @@ console.log("=============================================");
   console.log(`Main Array : ${array}`);
   console.log(`Reverse Array : ${result}`);
 }
+console.log("=============================================");
+{
+  /**
+   * Task 4.7 | Find a Number
+   * Create a function that searches for a specific number in an array and returns its index . if the number is not found , return -1
+   */
+  const number = [34, 45, 56, 67, 78, 89, 23, 24, 34, 45];
+  const findN = 78;
+  function findNumber(array, findN) {
+    if (array.includes(findN)) {
+      return array.indexOf(findN);
+    } else {
+      return -1;
+    }
+  }
+
+  const result = findNumber(number, findN);
+  console.log(result);
+}
+
+console.log("=============================================");
