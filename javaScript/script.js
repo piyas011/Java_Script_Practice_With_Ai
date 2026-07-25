@@ -720,3 +720,24 @@ console.log("=============================================");
   console.log(`Smallest Number : ${result}`);
 }
 console.log("=============================================");
+{
+  /**
+   * Task 4.4 | Count Even Numbers
+   * Create a function that counts how many even numbers are in an array.
+   */
+  const array = [4, 6, 5, 7, 3, 13, 90, 96, 43];
+  function countEvenNumber(arr) {
+    let evenArray = [];
+    for (const number of arr) {
+      if (number % 2 === 0) {
+        evenArray.push(number);
+      }
+    }
+    return evenArray;
+  }
+  let evenArray = countEvenNumber(array);
+
+  console.log(`Main Array : ${array}`);
+  console.log(`Even Number Array : ${evenArray}`);
+}
+console.log("=============================================");
