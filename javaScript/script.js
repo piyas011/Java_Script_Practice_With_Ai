@@ -656,3 +656,25 @@ console.log("=============================================");
     console.log("Not Palindtome");
   }
 }
+console.log("=============================================");
+{
+  //////////  Function And array ////////////
+  /**
+   * Task 4.1 |  Sum of an Array
+   * Create a function that takes an array of numbers as a prameter and returns the sum of all numbers.
+   *
+   */
+  const numbers = [34, 45, 56, 543, 32, 45, 677, 87, 45, 67, 54, 25, 46, 58];
+
+  function sumOfArrayNumbers(array) {
+    // console.log(array);
+    let totalSum = 0;
+    for (const num of numbers) {
+      totalSum += num;
+    }
+    return totalSum;
+  }
+
+  const result = sumOfArrayNumbers(numbers);
+  console.log(`Total Sum Of Array : ${result}`);
+}
