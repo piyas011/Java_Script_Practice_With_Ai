@@ -847,3 +847,11 @@ console.log("=============================================");
   }
   console.log(averageNumber(number).toFixed(2));
 }
+console.log("=============================================");
+{
+  /**
+   * Task 4.10 | Remove Duplicate Number
+   * Create a function that returns a new array without duplicate numbers.
+   */
+  const numbers = [23, 23, 34, 67, 67, 78, 78, 89, 89, 89, 87];
+}
