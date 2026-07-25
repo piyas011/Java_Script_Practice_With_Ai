@@ -766,3 +766,22 @@ console.log("=============================================");
   console.log(`Odd Number Array :`, result);
   console.log(`Total Odd Number :${countOddArray}`);
 }
+console.log("=============================================");
+{
+  /**
+   * Task 4.6 | Reverse an Array
+   * Create a function that returns a new array with the elements in reverse order.
+   */
+  const array = [4, 6, 5, 7, 3, 13, 90, 96, 43];
+  function reverseArray(arr) {
+    let revArr = [];
+    for (let i = array.length; i >= 0; i--) {
+      revArr.push(arr[i]);
+    }
+    return revArr;
+  }
+
+  let result = reverseArray(array);
+  console.log(`Main Array : ${array}`);
+  console.log(`Reverse Array : ${result}`);
+}
