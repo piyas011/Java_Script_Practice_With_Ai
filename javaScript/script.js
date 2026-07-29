@@ -898,5 +898,15 @@ console.log("=============================================");
 }
 console.log("=============================================");
 {
+  /**
+   * Task 4.12 | Reverse a String
+   * Create a function thar returns the refersed version of a string.
+   */
+  function reverseString(string) {
+    console.log(string);
+    let reverse = string.split("").reverse().join("");
+    return reverse;
+  }
+  console.log(reverseString("hello JavaScript World"));
 }
 console.log("=============================================");
