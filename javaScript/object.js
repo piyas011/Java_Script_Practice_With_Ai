@@ -20,3 +20,19 @@ console.log("==========================");
   person.country = "Bangladesh";
   console.log(person);
 }
+console.log("==========================");
+{
+  // Update Property
+  const person = {
+    name: "Piyas Ahmed",
+    age: 21,
+    isStudent: true,
+  };
+  person.age = 22;
+  console.log(person);
+}
+console.log("==========================");
+{
+  //
+}
+console.log("==========================");
