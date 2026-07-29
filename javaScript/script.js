@@ -850,7 +850,7 @@ console.log("=============================================");
 console.log("=============================================");
 {
   /**
-   * Remove Duplicate Numbers
+   * Task 4.10 | Remove Duplicate Numbers
    * Create a function that returns a new array without duplicat numbers.
    */
   const numbers = [2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 23, 23, 23, 23];
@@ -872,3 +872,31 @@ console.log("=============================================");
   }
   console.log(removeduplicateNumber(numbers));
 }
+console.log("=============================================");
+{
+  /**
+   * Task 4.11 | Count Vowels
+   * create a function that counts the numbers of vowels in a string.
+   */
+
+  function countVowels(string) {
+    console.log(string);
+    let vowels = "aeiou";
+    let count = 0;
+    for (let i = 0; i < string.length; i++) {
+      for (let j = 0; j < vowels.length; j++) {
+        if (string[i].toLowerCase() === vowels[j]) {
+          count++;
+        }
+      }
+    }
+
+    return count;
+  }
+
+  console.log(countVowels("jAvaScript"));
+}
+console.log("=============================================");
+{
+}
+console.log("=============================================");
