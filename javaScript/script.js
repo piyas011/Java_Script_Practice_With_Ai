@@ -848,3 +848,27 @@ console.log("=============================================");
   console.log(averageNumber(number).toFixed(2));
 }
 console.log("=============================================");
+{
+  /**
+   * Remove Duplicate Numbers
+   * Create a function that returns a new array without duplicat numbers.
+   */
+  const numbers = [2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 23, 23, 23, 23];
+
+  function removeduplicateNumber(array) {
+    let newArray = [];
+    for (const num1 of array) {
+      let found = false;
+      for (let num2 of newArray) {
+        if (num2 === num1) {
+          found = true;
+        }
+      }
+      if (!found) {
+        newArray.push(num1);
+      }
+    }
+    return newArray;
+  }
+  console.log(removeduplicateNumber(numbers));
+}
