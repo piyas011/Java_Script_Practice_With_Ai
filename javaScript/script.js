@@ -910,3 +910,19 @@ console.log("=============================================");
   console.log(reverseString("hello JavaScript World"));
 }
 console.log("=============================================");
+{
+  /**
+   * Task 5.13 | Palindrome Checker
+   * Create a function  that checks whether a string is a palindrome.
+   */
+  function checkPalindrome(string) {
+    let reverseString = string.split("").reverse().join("");
+    if (string === reverseString) {
+      return "Palindrome";
+    }
+    return "Not Palindrome";
+  }
+
+  console.log(checkPalindrome("mada"));
+}
+console.log("=============================================");
