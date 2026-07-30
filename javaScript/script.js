@@ -928,7 +928,7 @@ console.log("=============================================");
 console.log("=============================================");
 {
   /**
-   * Count Characters
+   * Task 5.14 | Count Characters
    * Create a function thar counts how many times a specific character appears in a string .
    */
 
@@ -946,5 +946,28 @@ console.log("=============================================");
   }
 
   console.log(countCharacters("Hi i am Piyas", "i"));
+}
+console.log("=============================================");
+{
+  /**
+   * Task 4.15 | Find the Longest Word
+   * Create a function that takes an array of words and returns the longest word.
+   */
+
+  function findLongestWord(string) {
+    if (typeof string === "number") {
+      return "Invalid";
+    }
+    let words = string.split(" ");
+    let longesWord = words[0];
+    for (const word of words) {
+      if (longesWord.length < word.length) {
+        longesWord = word;
+      }
+    }
+    return longesWord;
+  }
+
+  console.log(findLongestWord("Hello JavaScript , This is a simple String"));
 }
 console.log("=============================================");
