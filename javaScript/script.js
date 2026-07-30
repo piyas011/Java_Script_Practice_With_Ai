@@ -1031,3 +1031,33 @@ console.log("=============================================");
   console.log(shoppingCart([45, 56, 67, 787, 654, 343, 675, 799]));
 }
 console.log("=============================================");
+{
+  /**
+   *  Task 4.18 | Temperature Analyzer
+   * Create a function thar finds the highest and lowest temperatures from an array.
+   */
+
+  function temperatureAnalyzer(temperatures) {
+    // return temperatures;
+    if (!Array.isArray(temperatures)) {
+      return " Invalid Temperature";
+    }
+    let highestTemperature = temperatures[0];
+    let lowestTemperature = temperatures[0];
+
+    for (const temperature of temperatures) {
+      if (typeof temperature !== "number") {
+        return "Invalid Temperature";
+      }
+      if (highestTemperature < temperature) {
+        highestTemperature = temperature;
+      }
+      if (lowestTemperature > temperature) {
+        lowestTemperature = temperature;
+      }
+    }
+    return { highestTemperature, lowestTemperature };
+  }
+  console.log(temperatureAnalyzer([23, NaN, 12, 21, 23, 24, 52, 2, 21, 43]));
+}
+console.log("=============================================");
