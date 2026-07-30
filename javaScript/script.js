@@ -1009,3 +1009,25 @@ console.log("=============================================");
   console.log(resultAnalyzer([34, 40, 56, 67, 54, 34, 23, 65, 78, 98]));
 }
 console.log("=============================================");
+{
+  /**
+   * Task 4.17 | Shopping Cart Total
+   * Create a function that calculates the total price of all products in an array.
+   */
+
+  function shoppingCart(priceArray) {
+    if (!Array.isArray(priceArray)) {
+      return "Invalid";
+    }
+    let totalPrice = 0;
+    for (const price of priceArray) {
+      if (typeof price !== "number") {
+        return "Invalid";
+      }
+      totalPrice += price;
+    }
+    return totalPrice;
+  }
+  console.log(shoppingCart([45, 56, 67, 787, 654, 343, 675, 799]));
+}
+console.log("=============================================");
