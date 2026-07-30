@@ -926,3 +926,25 @@ console.log("=============================================");
   console.log(checkPalindrome("mada"));
 }
 console.log("=============================================");
+{
+  /**
+   * Count Characters
+   * Create a function thar counts how many times a specific character appears in a string .
+   */
+
+  function countCharacters(string, terget) {
+    if (typeof string !== "string" || typeof terget !== "string") {
+      return "Invalid";
+    }
+    let count = 0;
+    for (str of string) {
+      if (terget === str) {
+        count++;
+      }
+    }
+    return count;
+  }
+
+  console.log(countCharacters("Hi i am Piyas", "i"));
+}
+console.log("=============================================");
