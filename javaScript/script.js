@@ -1082,3 +1082,26 @@ console.log("=============================================");
   // console.log(multiplication(3));
 }
 console.log("=============================================");
+{
+  /**
+   *  Task 4.20 | Prime Number Checker
+   * Create a function that checks whether a given number is prime
+   */
+
+  function primeNumberChecker(number) {
+    if (typeof number !== "number" || Number.isNaN(number)) {
+      return "Invalid Input";
+    }
+    if (number <= 1) {
+      return "Invalid Input";
+    }
+    for (let i = 2; i < number; i++) {
+      if (number % i === 0) {
+        return "Not Prime Number";
+      }
+    }
+    return "Prime Number";
+  }
+  console.log(primeNumberChecker(9));
+}
+console.log("=============================================");
