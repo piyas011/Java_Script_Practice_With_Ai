@@ -1061,3 +1061,24 @@ console.log("=============================================");
   console.log(temperatureAnalyzer([23, NaN, 12, 21, 23, 24, 52, 2, 21, 43]));
 }
 console.log("=============================================");
+{
+  /**
+   *  Task 4.19 | Multiplication Table
+   * Create a function that prints the multiplication table of a given number from 1 to 10;
+   */
+  function multiplication(number) {
+    if (typeof number !== "number" || isNaN(number)) {
+      return "Invalid";
+    }
+    // let table = [];
+    for (let i = 1; i <= 10; i++) {
+      console.log(` ${i} * ${number} = ${number * i}`);
+      // table.push(` ${i} * ${number} = ${number * i}`);
+    }
+    // return table;
+  }
+
+  multiplication(3);
+  // console.log(multiplication(3));
+}
+console.log("=============================================");
