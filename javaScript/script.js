@@ -971,3 +971,41 @@ console.log("=============================================");
   console.log(findLongestWord("Hello JavaScript , This is a simple String"));
 }
 console.log("=============================================");
+{
+  /**
+   * Task 4.16 | Student Result Analyzer
+   * Create a function that takes an array of student marks and returns:
+   * Total students
+   * Passed Students (marks >= 40)
+   * Faild Students
+   */
+
+  function resultAnalyzer(resultArray) {
+    // return resultArray;
+    let totalStudents = resultArray.length;
+    let passStudents = 0;
+    let failStudents = 0;
+    if (!Array.isArray(resultArray)) {
+      return "Invalid Marks";
+    }
+    for (const mark of resultArray) {
+      if (typeof mark !== "number") {
+        return "Invalid";
+      }
+      if (mark >= 40) {
+        passStudents++;
+      } else {
+        failStudents++;
+      }
+    }
+    return { totalStudents, passStudents, failStudents };
+    // return `
+    //   Total Students = ${totalStudents}
+    //   Passed Students = ${passStudents}
+    //   Failed Students = ${failStudents}
+    //   `;
+  }
+
+  console.log(resultAnalyzer([34, 40, 56, 67, 54, 34, 23, 65, 78, 98]));
+}
+console.log("=============================================");
