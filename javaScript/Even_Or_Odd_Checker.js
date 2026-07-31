@@ -1,4 +1,4 @@
-// Even of odd checker
+// Even or odd checker
 // Check whether a number is even of odd.
 
 const number = 20;
