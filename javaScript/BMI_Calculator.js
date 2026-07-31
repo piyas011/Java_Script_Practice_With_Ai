@@ -1,4 +1,4 @@
-// BMI Calculator
+// Task 9 | BMI Calculator
 // calculate BMI and print the health category.
 
 const height = [5, 6]; // 5f  6i
