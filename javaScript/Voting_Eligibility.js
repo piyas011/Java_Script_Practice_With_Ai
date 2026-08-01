@@ -1,4 +1,4 @@
-// Voting Eligibility
+// Task 10 | Voting Eligibility
 // Check whether a person is eligible to vote
 
 const eligibleAge = 17;
