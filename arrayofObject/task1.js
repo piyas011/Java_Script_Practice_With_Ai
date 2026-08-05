@@ -247,3 +247,19 @@ function averageStudentAge(obj) {
 }
 
 console.log("Average Students Age :", averageStudentAge(students));
+console.log("===============================");
+
+// Task 22
+// যাদের marks 70-এর বেশি তাদের নামের array বানাও।
+
+function getTopStudents(obj) {
+  let topStudents = obj.filter((student) => {
+    if (student.marks > 70) {
+      return student;
+    }
+  });
+  let studentName = topStudents.map((top) => top.name);
+
+  return studentName;
+}
+console.log(getTopStudents(students));
