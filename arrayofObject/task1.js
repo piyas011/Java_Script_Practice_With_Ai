@@ -184,3 +184,51 @@ function lowestMark(obj) {
 
 console.log(lowestMark(students));
 console.log("===============================");
+
+// Task 17
+// শুধু student-দের name নিয়ে নতুন array তৈরি করো (map() ব্যবহার করে)।
+
+function studentNameArray(obj) {
+  let studentName = obj.map((name) => name.name);
+  return studentName;
+}
+console.log(studentNameArray(students));
+console.log("===============================");
+
+// Task 18
+// শুধু passed student নিয়ে নতুন array তৈরি করো (filter())।
+
+function passedStudentArray(obj) {
+  let passedStudent = obj.filter((student) => {
+    if (student.isPassed === true) {
+      return student;
+    }
+  });
+  return passedStudent;
+}
+
+console.log(passedStudentArray(students));
+console.log("===============================");
+
+// Task 19
+// Dhaka-এর student-দের নিয়ে নতুন array তৈরি করো।
+
+function dhakaStudents(obj) {
+  let dhaka = obj.filter((student) => {
+    if (student.city === "Dhaka") {
+      return student;
+    }
+  });
+  return dhaka;
+}
+
+console.log(dhakaStudents(students));
+console.log("===============================");
+
+function totalMarkStudents(obj) {
+  let totalMark = obj.reduce((acc, student) => {
+    return acc + student.marks;
+  }, 0);
+  return totalMark;
+}
+console.log(totalMarkStudents(students));
