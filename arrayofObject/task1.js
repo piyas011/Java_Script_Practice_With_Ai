@@ -263,3 +263,17 @@ function getTopStudents(obj) {
   return studentName;
 }
 console.log(getTopStudents(students));
+console.log("===============================");
+
+// Task 23
+// সব student-এর নাম uppercase করে নতুন array বানাও।
+
+function studentNameUpperCase(obj) {
+  let name = obj.map((student) => {
+    return student.name.toUpperCase();
+  });
+  return name;
+}
+
+console.log(studentNameUpperCase(students));
+console.log("===============================");
