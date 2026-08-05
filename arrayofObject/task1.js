@@ -225,6 +225,9 @@ function dhakaStudents(obj) {
 console.log(dhakaStudents(students));
 console.log("===============================");
 
+// Task 20
+// সব student-এর marks-এর total বের করো (reduce())।
+
 function totalMarkStudents(obj) {
   let totalMark = obj.reduce((acc, student) => {
     return acc + student.marks;
@@ -232,3 +235,15 @@ function totalMarkStudents(obj) {
   return totalMark;
 }
 console.log(totalMarkStudents(students));
+console.log("===============================");
+
+// Task 21
+// সব student-এর age-এর average বের করো।
+function averageStudentAge(obj) {
+  let averageAge = obj.reduce((acc, student) => {
+    return acc + student.age;
+  }, 0);
+  return averageAge / students.length;
+}
+
+console.log("Average Students Age :", averageStudentAge(students));
