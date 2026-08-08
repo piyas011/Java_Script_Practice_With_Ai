@@ -304,3 +304,24 @@ const checkStudent = (students) => {
   return false;
 };
 console.log(checkStudent(students));
+
+console.log("===============================");
+// Task 28
+// সব student-এর জন্য এই format-এ print করো:
+// Piyas (22 years) - Passed
+// Rahim (20 years) - Failed.
+
+const printFunction = (studentsArray) => {
+  let students = studentsArray.map((student) => {
+    let isPass;
+    if (student.isPassed === true) {
+      isPass = "Passed";
+    } else {
+      isPass = "Faile";
+    }
+    return ` ${student.name} (${student.age} Years) - ${isPass}`;
+  });
+  return students;
+};
+
+console.log(printFunction(students));
