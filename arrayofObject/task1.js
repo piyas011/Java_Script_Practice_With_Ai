@@ -289,3 +289,18 @@ const findStudent = students.find((student) => {
 console.log(findStudent);
 
 console.log("===============================");
+
+// Task 26
+// Rahim নামে student আছে কিনা check করো (some())।
+
+// Task 27
+// যেকোনো একজনের marks 90-এর বেশি আছে কিনা check করো।
+const checkStudent = (students) => {
+  students.filter((student) => {
+    if (student.marks > 90) {
+      return true;
+    }
+  });
+  return false;
+};
+console.log(checkStudent(students));
