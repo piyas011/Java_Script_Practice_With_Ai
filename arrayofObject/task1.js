@@ -277,3 +277,15 @@ function studentNameUpperCase(obj) {
 
 console.log(studentNameUpperCase(students));
 console.log("===============================");
+
+// Task 24
+// id = 3 এর student খুঁজে বের করো (find())।
+
+const findStudent = students.find((student) => {
+  if (student.id === 3) {
+    return student;
+  }
+});
+console.log(findStudent);
+
+console.log("===============================");
